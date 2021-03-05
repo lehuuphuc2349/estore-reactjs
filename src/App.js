@@ -1,7 +1,15 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <Router>
+        <Navbar />
+      </Router>
+    </>
+  );
 }
 
 export default App;
