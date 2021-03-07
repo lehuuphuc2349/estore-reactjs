@@ -4,3 +4,165 @@
 .header .col-md-3 .col-md-6 {
   margin-bottom: 30px;
 }
+.header .navbar {
+  padding: 0;
+  height: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  background: #fff !important;
+}
+.header .navbar-nav {
+  width: 100%;
+  padding: 15px 0;
+}
+.header .navbar li {
+  padding: 0 30px;
+  border-bottom: 1px solid #f3f6ff;
+}
+.header .navbar li:last-child {
+  border-bottom: none;
+}
+.header .navbar a {
+  color: #353535;
+}
+.header .navbar a:hover {
+  color: #ff6f61;
+}
+.header .navbar i {
+  color: #ff6f61;
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+.header .navbar a:hover i {
+  color: #353535;
+}
+.header-slider {
+  position: relative;
+  width: 100%;
+}
+.header-slider .header-slider-item {
+  position: relative;
+}
+.header-slider .header-slider-caption {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 111, 96, 0.7);
+}
+.header-slider .header-slider-caption p {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+}
+.header-slider-caption .btn {
+  border-color: #fff;
+}
+.header-slider-caption .btn i {
+  margin-right: 5px;
+}
+.header .header-img {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  max-height: 400px;
+  background: #ffffff;
+}
+.header .img-item {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.header-img .img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.normal-slider .slick-prev,
+.normal-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  transition: 0.5s;
+  background: rgba(255, 111, 97, 0.7);
+  border-radius: 4px;
+}
+/* Slider CSS */
+.normal-slider .slick-prev {
+  left: 50px;
+}
+
+.normal-slider .slick-next {
+  right: 55px;
+}
+
+.normal-slider.slick-slider:hover .slick-prev {
+  left: 15px;
+  opacity: 1;
+}
+
+.normal-slider.slick-slider:hover .slick-next {
+  right: 15px;
+  opacity: 1;
+}
+
+.normal-slider .slick-prev:hover,
+.normal-slider .slick-prev:focus,
+.normal-slider .slick-next:hover,
+.normal-slider .slick-next:focus {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.normal-slider .slick-prev:hover::before,
+.normal-slider .slick-prev:focus::before,
+.normal-slider .slick-next:hover::before,
+.normal-slider .slick-next:focus::before {
+  color: #ff6f61;
+}
+
+.normal-slider .slick-prev::before,
+.normal-slider .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.normal-slider .slick-prev::before {
+  content: "\f104";
+}
+
+.normal-slider .slick-next::before {
+  content: "\f105";
+}
+
+.normal-slider .slick-dots {
+  bottom: 15px;
+}
+
+.normal-slider .slick-dots li button:before {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.normal-slider .slick-dots li.slick-active button:before {
+  color: #ff6f61;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+/* END SLIDER CSS */

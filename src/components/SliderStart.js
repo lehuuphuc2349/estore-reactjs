@@ -4,8 +4,19 @@ import slider2 from "./images/slider-2.jpg";
 import slider3 from "./images/slider-3.jpg";
 import category1 from "./images/category-1.jpg";
 import category2 from "./images/category-2.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./SliderStart.css";
+
 function SliderStart() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div className="header">
       <div className="container-fluid">
@@ -15,42 +26,42 @@ function SliderStart() {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-home">Home</i>
+                    <i className="fa fa-home"></i>Home
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-shopping-bag">Best Selling</i>
+                    <i className="fa fa-shopping-bag"></i>Best Selling
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-plus-square">New Arrivals</i>
+                    <i className="fa fa-plus-square"></i>New Arrivals
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-female">Fashion & Beauty</i>
+                    <i className="fa fa-female"></i>Fashion & Beauty
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-child">Kid & Babies Clothes</i>
+                    <i className="fa fa-child"></i>Kid & Babies Clothes
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-tshirt">Men & Women Clothes</i>
+                    <i className="fa fa-tshirt"></i>Men & Women Clothes
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-mobile-alt">Gadgets & Accessories</i>
+                    <i className="fa fa-mobile-alt"></i>Gadgets & Accessories
                   </a>
                 </li>
                 <li className="nav-item">
                   <a href="" className="nav-link">
-                    <i className="fa fa-microchip">Electronics & Accessories</i>
+                    <i className="fa fa-microchip"></i>Electronics & Accessories
                   </a>
                 </li>
               </ul>
@@ -58,33 +69,35 @@ function SliderStart() {
           </div>
           <div className="col-md-6">
             <div className="header-slider normal-slider">
-              <div class="header-slider-item">
-                <img src={slider1} alt="" />
-                <div className="header-slider-caption">
-                  <p>This is my shopping webstie</p>
-                  <a href="" className="btn">
-                    <i className="fa fa-shopping-cart"></i>
-                  </a>
+              <Slider {...settings}>
+                <div class="header-slider-item">
+                  <img src={slider1} alt="" />
+                  <div className="header-slider-caption">
+                    <p>This is my shopping webstie</p>
+                    <a href="" className="btn">
+                      <i className="fa fa-shopping-cart"></i>Shop now
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="header-slider-item">
-                <img src={slider2} alt="" />
-                <div className="header-slider-caption">
-                  <p>This is my shopping webstie</p>
-                  <a href="" className="btn">
-                    <i className="fa fa-shopping-cart"></i>
-                  </a>
+                <div class="header-slider-item">
+                  <img src={slider2} alt="" />
+                  <div className="header-slider-caption">
+                    <p>This is my shopping webstie</p>
+                    <a href="" className="btn">
+                      <i className="fa fa-shopping-cart"></i>Shop now
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="header-slider-item">
-                <img src={slider3} alt="" />
-                <div className="header-slider-caption">
-                  <p>This is my shopping webstie</p>
-                  <a href="" className="btn">
-                    <i className="fa fa-shopping-cart"></i>
-                  </a>
+                <div class="header-slider-item">
+                  <img src={slider3} alt="" />
+                  <div className="header-slider-caption">
+                    <p>This is my shopping webstie</p>
+                    <a href="" className="btn">
+                      <i className="fa fa-shopping-cart"></i>Shop now
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </Slider>
             </div>
           </div>
           <div className="col-md-3">
