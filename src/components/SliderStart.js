@@ -108,13 +108,11 @@ function SliderStart() {
                   <p>This is my shopping website</p>
                 </a>
               </div>
-              <div className="header-img">
-                <div className="img-item">
-                  <img src={category2} alt="" />
-                  <a href="" className="img-text">
-                    <p>This is my shopping website</p>
-                  </a>
-                </div>
+              <div className="img-item">
+                <img src={category2} alt="" />
+                <a href="" className="img-text">
+                  <p>This is my shopping website</p>
+                </a>
               </div>
             </div>
           </div>
