@@ -1,0 +1,8 @@
+.featured-product {
+  position: relative;
+  padding: 0 30px;
+}
+.featured-product .section-header {
+  margin-bottom: 30px;
+  padding: 20px 30px 15px 30px;
+}

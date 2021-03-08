@@ -13,7 +13,7 @@
 .top-bar .col-sm-6:last-child {
   text-align: right;
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .top-bar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
