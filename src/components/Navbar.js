@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className="nav">
       <div className="container-fluid">
-        <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav className="navbar navbar-expand-md  bg-dark navbar-dark">
           <a href="#" className="navbar-brand">
             MENU
           </a>

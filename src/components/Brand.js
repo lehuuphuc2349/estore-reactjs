@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Brand.css";
 function Brand() {
   const settings = {
-    speed: 5000,
+    speed: 7000,
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
