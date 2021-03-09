@@ -6,6 +6,7 @@ import Feature from "../Feature";
 import FeaturedProduct from "../FeaturedProduct";
 import NewsletterStart from "../NewsletterStart";
 import RecentProduct from "../RecentProduct";
+import Review from "../Review";
 import SliderStart from "../SliderStart";
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <FeaturedProduct />
       <CallUs />
       <RecentProduct />
+      <Review />
     </>
   );
 }

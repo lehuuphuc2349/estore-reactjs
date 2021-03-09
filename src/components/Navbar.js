@@ -21,13 +21,13 @@ function Navbar() {
             id="navbarCollapse"
           >
             <div className="navbar-nav mr-auto">
-              <a href="" className="nav-item nav-link active">
+              <a href="/" className="nav-item nav-link active">
                 Home
               </a>
-              <a href="" className="nav-item nav-link ">
+              <a href="/product" className="nav-item nav-link ">
                 Products
               </a>
-              <a href="" className="nav-item nav-link ">
+              <a href="/product-detail" className="nav-item nav-link ">
                 Products Detail
               </a>
               <a href="" className="nav-item nav-link ">
