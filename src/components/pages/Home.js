@@ -1,9 +1,11 @@
 import React from "react";
 import Brand from "../Brand";
+import CallUs from "../CallUs";
 import CategoryStart from "../CategoryStart";
 import Feature from "../Feature";
 import FeaturedProduct from "../FeaturedProduct";
 import NewsletterStart from "../NewsletterStart";
+import RecentProduct from "../RecentProduct";
 import SliderStart from "../SliderStart";
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <CategoryStart />
       <NewsletterStart />
       <FeaturedProduct />
+      <CallUs />
+      <RecentProduct />
     </>
   );
 }

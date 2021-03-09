@@ -10,6 +10,9 @@
 .product-item:hover .product-title {
   background-color: #ff6f61;
 }
+.product-item:hover .product-title .ratting i {
+  color: #fff;
+}
 .product-item .product-title a,
 .product-item .product-title .ratting {
   position: relative;
@@ -102,9 +105,7 @@
   padding: 20px;
   transition: all 0.3s;
 }
-/* .product-item .product-price:hover {
-  background-color: #ff6f61;
-} */
+
 .product-item:hover .product-price {
   background-color: #ff6f61;
 }
