@@ -13,7 +13,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #353535;
+  color: #353535 !important;
   outline: none;
   text-decoration: none;
 }
@@ -26,4 +26,10 @@ h1 {
 h2 {
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

@@ -1,10 +1,13 @@
 import React from "react";
+import BreadCrumb from "./Product-component/BreadCrumb";
+import ProductList from "./Product-component/ProductList";
 
 function Product() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <BreadCrumb />
+      <ProductList />
+    </>
   );
 }
 
