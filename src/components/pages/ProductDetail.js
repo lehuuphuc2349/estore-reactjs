@@ -1,7 +1,7 @@
 import React from "react";
 import Brand from "../Brand";
-import BreadCrumb from "./Product-component/BreadCrumb";
 import ProductDetailStart from "./Product-Detail/ProductDetailStart";
+import BreadCrumb from "../../function/BreadCrumb";
 
 function ProductDetail() {
   return (

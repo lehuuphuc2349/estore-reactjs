@@ -30,7 +30,7 @@ function Navbar() {
               <a href="/product-detail" className="nav-item nav-link ">
                 Products Detail
               </a>
-              <a href="" className="nav-item nav-link ">
+              <a href="/cart" className="nav-item nav-link ">
                 Cart
               </a>
               <a href="" className="nav-item nav-link ">

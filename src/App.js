@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Product from "./components/pages/Product";
 import ScrollTop from "./function/ScrollTop";
 import ProductDetail from "./components/pages/ProductDetail";
-
+import Cart from "./components/pages/Cart";
 function App() {
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/product" exact component={Product} />
           <Route path="/product-detail" exact component={ProductDetail} />
+          <Route path="/cart" exact component={Cart} />
         </Switch>
         <ScrollTop />
         <Footer />
