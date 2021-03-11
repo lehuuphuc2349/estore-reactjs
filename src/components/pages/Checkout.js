@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BreadCrumb from "../../function/BreadCrumb";
+import Slider from "react-slick";
+import $ from "jquery";
 import "./Checkout.css";
 function Checkout() {
   const slideShippAddress = () => {
-    const checkbox = document.getElementById("shipto");
-    let shippingAddress = document.querySelector("#shipping-address");
+    const checkbox = document.querySelector("#shipto");
+    let shippingAddress = document.querySelector(".shipping-address");
     if (checkbox.checked == true) {
       shippingAddress.style.display = "block";
     } else {
