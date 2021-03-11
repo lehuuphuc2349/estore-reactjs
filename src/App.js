@@ -7,6 +7,7 @@ import Product from "./components/pages/Product";
 import ScrollTop from "./function/ScrollTop";
 import ProductDetail from "./components/pages/ProductDetail";
 import Cart from "./components/pages/Cart";
+import Checkout from "./components/pages/Checkout";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/product" exact component={Product} />
           <Route path="/product-detail" exact component={ProductDetail} />
           <Route path="/cart" exact component={Cart} />
+          <Route path="/checkout" exact component={Checkout} />
         </Switch>
         <ScrollTop />
         <Footer />

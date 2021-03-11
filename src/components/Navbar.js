@@ -33,10 +33,10 @@ function Navbar() {
               <a href="/cart" className="nav-item nav-link ">
                 Cart
               </a>
-              <a href="" className="nav-item nav-link ">
+              <a href="/checkout" className="nav-item nav-link ">
                 Checkout
               </a>
-              <a href="" className="nav-item nav-link ">
+              <a href="/my-account" className="nav-item nav-link ">
                 My Account
               </a>
               <div className="nav-item dropdown">
@@ -48,13 +48,13 @@ function Navbar() {
                   More Pages
                 </a>
                 <div className="dropdown-menu">
-                  <a href="" className="dropdown-item">
+                  <a href="/wish-list" className="dropdown-item">
                     Wishlist
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="login-and-register" className="dropdown-item">
                     Login and Register
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="contact-us" className="dropdown-item">
                     Contact US
                   </a>
                 </div>

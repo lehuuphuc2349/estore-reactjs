@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import product1 from "../images/product-1.jpg";
 import product2 from "../images/product-2.jpg";
 import product3 from "../images/product-3.jpg";
 import product4 from "../images/product-4.jpg";
 import product5 from "../images/product-5.jpg";
 import BreadCrumb from "../../function/BreadCrumb";
+import $ from "jquery";
 import "./Cart.css";
 function Cart() {
+  useEffect(() => {
+    window.addEventListener("load", function () {
+      $(".qty btn").on("click", function () {
+        let $btn = $(this);
+        let value = $btn.parent().find("input").val();
+        if ($btn.hasClass("btn-plus")) {
+          var newValue = parseFloat(value) + 1;
+        } else {
+          if (value > 0) {
+            var newValue = parseFloat(value) - 1;
+          } else {
+            newValue = 0;
+          }
+        }
+        $btn.parent().find("input").val(newValue);
+        console.log(newValue);
+      });
+    });
+  });
   return (
     <>
       <BreadCrumb />
