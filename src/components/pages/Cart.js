@@ -8,27 +8,27 @@ import BreadCrumb from "../../function/BreadCrumb";
 import $ from "jquery";
 import "./Cart.css";
 function Cart() {
-  const code = ["101", "102", "103"];
-  const couponCode = () => {
-    const coupon = document.querySelectorAll("coupon");
-    const inputValue = coupon[0];
-    const zipCode = inputValue.value();
-    let value = document.getElementsByTagName("span").value;
-    code.map((item) => {
-      if (zipCode == item && value > 0) {
-        value = value - (value * 10) / 100;
-      } else {
-        if (value == 0) {
-          alert("Please Choose Product You Want");
-        } else {
-          alert("Your Zip Code Is Wrong");
-        }
-      }
-    });
-  };
-  useEffect(() => {
-    setTimeout(couponCode, 1000);
-  });
+  // const code = ["101", "102", "103"];
+  // const couponCode = () => {
+  //   const coupon = document.querySelectorAll("coupon");
+  //   const inputValue = coupon[0];
+  //   const zipCode = inputValue.value();
+  //   let value = document.getElementsByTagName("span").value;
+  //   code.map((item) => {
+  //     if (zipCode == item && value > 0) {
+  //       value = value - (value * 10) / 100;
+  //     } else {
+  //       if (value == 0) {
+  //         alert("Please Choose Product You Want");
+  //       } else {
+  //         alert("Your Zip Code Is Wrong");
+  //       }
+  //     }
+  //   });
+  // };
+  // useEffect(() => {
+  //   setTimeout(couponCode, 1000);
+  // });
   useEffect(() => {
     window.addEventListener("load", function () {
       $(".qty btn").on("click", function () {

@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import BreadCrumb from "../../function/BreadCrumb";
-import Slider from "react-slick";
 import $ from "jquery";
 import "./Checkout.css";
 function Checkout() {
@@ -13,6 +12,18 @@ function Checkout() {
       shippingAddress.style.display = "none";
     }
   };
+  useEffect(() => {
+    window.addEventListener("load", function () {
+      $(".checkout .payment-method .custom-control-input").change(function () {
+        if ($(this).prop("checked")) {
+          var checkbox_id = $(this).attr("id");
+          $(".checkout .payment-method .payment-content").slideUp();
+          $("#" + checkbox_id + "-show").slideDown();
+        }
+      });
+    });
+  });
+
   return (
     <>
       <BreadCrumb />
@@ -262,6 +273,133 @@ function Checkout() {
                         </label>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="checkout-inner">
+                <div className="checkout-summary">
+                  <h1>Cart ToTal</h1>
+                  <p>
+                    Product Name <span>$99</span>
+                  </p>
+                  <p className="sub-total">
+                    Sub Total <span>$99</span>
+                  </p>
+                  <p className="shop-cost">
+                    Shipping Cost <span>$1</span>
+                  </p>
+                  <h2>
+                    Grand Total <span>$100</span>
+                  </h2>
+                </div>
+                <div className="checkout-payment">
+                  <div className="payment-methods">
+                    <h1>Payment Method</h1>
+                    <div className="payment-method">
+                      <div className="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="payment-1"
+                          name="payment"
+                        />
+                        <label className="custom-control-label" for="payment-1">
+                          Paypal
+                        </label>
+                      </div>
+                      <div className="payment-content" id="payment-1-show">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Cras tincidunt orci ac eros volutpat maximus
+                          lacinia quis diam.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="payment-method">
+                      <div className="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="payment-2"
+                          name="payment"
+                        />
+                        <label className="custom-control-label" for="payment-2">
+                          Payoneer
+                        </label>
+                      </div>
+                      <div className="payment-content" id="payment-2-show">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Cras tincidunt orci ac eros volutpat maximus
+                          lacinia quis diam.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="payment-method">
+                      <div className="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="payment-3"
+                          name="payment"
+                        />
+                        <label className="custom-control-label" for="payment-3">
+                          Check Payment
+                        </label>
+                      </div>
+                      <div className="payment-content" id="payment-3-show">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Cras tincidunt orci ac eros volutpat maximus
+                          lacinia quis diam.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="payment-method">
+                      <div className="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="payment-4"
+                          name="payment"
+                        />
+                        <label className="custom-control-label" for="payment-4">
+                          Direct Bank Transfer
+                        </label>
+                      </div>
+                      <div className="payment-content" id="payment-4-show">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Cras tincidunt orci ac eros volutpat maximus
+                          lacinia quis diam.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="payment-method">
+                      <div className="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="payment-5"
+                          name="payment"
+                        />
+                        <label className="custom-control-label" for="payment-5">
+                          Cash on Delivery
+                        </label>
+                      </div>
+                      <div className="payment-content" id="payment-5-show">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Cras tincidunt orci ac eros volutpat maximus
+                          lacinia quis diam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="checkout-btn">
+                    <button>Place Order</button>
                   </div>
                 </div>
               </div>
