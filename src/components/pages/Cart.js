@@ -5,6 +5,7 @@ import product3 from "../images/product-3.jpg";
 import product4 from "../images/product-4.jpg";
 import product5 from "../images/product-5.jpg";
 import BreadCrumb from "../../function/BreadCrumb";
+import $ from "jquery";
 import "./Cart.css";
 function Cart() {
   useEffect(() => {
@@ -12,10 +13,10 @@ function Cart() {
       const btn = document.querySelectorAll(".qty button");
       btn.forEach((item) => {
         item.addEventListener("click", function () {
-          var value = document.querySelectorAll(".qty input").value;
-          if (item.classList.contains("btn-plus")) {
-            console.log(value);
-            var newValue = value + 1;
+          var btnActive = $(this);
+          var value = btnActive.parent().find("input").val();
+          if (btnActive.hasClass("btn-plus")) {
+            var newValue = parseFloat(value) + 1;
           } else {
             if (value > 0) {
               var newValue = value - 1;
@@ -23,7 +24,7 @@ function Cart() {
               newValue = 0;
             }
           }
-          value = newValue;
+          btnActive.parent().find("input").val(newValue);
         });
       });
     });

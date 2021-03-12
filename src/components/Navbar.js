@@ -51,10 +51,10 @@ function Navbar() {
                   <a href="/wishlist" className="dropdown-item">
                     Wishlist
                   </a>
-                  <a href="login-and-register" className="dropdown-item">
+                  <a href="login-register" className="dropdown-item">
                     Login and Register
                   </a>
-                  <a href="contact-us" className="dropdown-item">
+                  <a href="contact" className="dropdown-item">
                     Contact US
                   </a>
                 </div>

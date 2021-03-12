@@ -10,6 +10,8 @@ import Cart from "./components/pages/Cart";
 import Checkout from "./components/pages/Checkout";
 import MyAccount from "./components/pages/MyAccount";
 import WishList from "./components/pages/WishList";
+import LoginAndRegister from "./components/pages/LoginAndRegister";
+import Contact from "./components/pages/Contact";
 function App() {
   return (
     <>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/checkout" exact component={Checkout} />
           <Route path="/my-account" exact component={MyAccount} />
           <Route path="/wishlist" exact component={WishList} />
+          <Route path="/login-register" exact component={LoginAndRegister} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
         <ScrollTop />
         <Footer />

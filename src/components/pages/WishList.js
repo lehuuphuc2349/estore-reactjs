@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BreadCrumb from "../../function/BreadCrumb";
 import product1 from "../images/product-1.jpg";
 import product2 from "../images/product-2.jpg";
 import product3 from "../images/product-3.jpg";
 import product4 from "../images/product-4.jpg";
 import product5 from "../images/product-5.jpg";
+import $ from "jquery";
 import "./WishList.css";
 function WishList() {
+  useEffect(() => {
+    window.addEventListener("load", function () {
+      const btn = document.querySelectorAll(".qty button");
+      btn.forEach((item) => {
+        item.addEventListener("click", function () {
+          var btnActive = $(this);
+          var value = btnActive.parent().find("input").val();
+          if (btnActive.hasClass("btn-plus")) {
+            var newValue = parseFloat(value) + 1;
+          } else {
+            if (value > 0) {
+              var newValue = value - 1;
+            } else {
+              newValue = 0;
+            }
+          }
+          btnActive.parent().find("input").val(newValue);
+        });
+      });
+    });
+  });
   return (
     <>
       <BreadCrumb />
