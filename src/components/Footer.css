@@ -72,7 +72,7 @@
   transition: all 0.3s;
 }
 .footer .social a:hover {
-  color: #ff6f61;
+  color: #ff6f61 !important;
   border-color: #ff6f61;
 }
 .footer .payment {

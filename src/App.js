@@ -8,6 +8,8 @@ import ScrollTop from "./function/ScrollTop";
 import ProductDetail from "./components/pages/ProductDetail";
 import Cart from "./components/pages/Cart";
 import Checkout from "./components/pages/Checkout";
+import MyAccount from "./components/pages/MyAccount";
+import WishList from "./components/pages/WishList";
 function App() {
   return (
     <>
@@ -19,6 +21,8 @@ function App() {
           <Route path="/product-detail" exact component={ProductDetail} />
           <Route path="/cart" exact component={Cart} />
           <Route path="/checkout" exact component={Checkout} />
+          <Route path="/my-account" exact component={MyAccount} />
+          <Route path="/wishlist" exact component={WishList} />
         </Switch>
         <ScrollTop />
         <Footer />

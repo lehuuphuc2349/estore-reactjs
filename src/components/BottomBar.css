@@ -60,9 +60,9 @@
 .bottom-bar .user .cart span :hover {
   color: #ffffff;
 }
-/* .bottom-bar .user .cart:hover i,
+.bottom-bar .user .cart:hover i,
 .bottom-bar .user .wishlist:hover i,
 .bottom-bar .user .cart:hover span,
 .bottom-bar .user .wishlist:hover span {
   color: #ffffff;
-} */
+}

@@ -23,11 +23,11 @@ function BottomBar() {
           </div>
           <div className="col-md-3">
             <div className="user">
-              <a href="" className="btn wishlist">
+              <a href="/wishlist" className="btn wishlist">
                 <i className="fa fa-heart"></i>
                 <span>(0)</span>
               </a>
-              <a href="" className="btn cart">
+              <a href="/cart" className="btn cart">
                 <i className="fa fa-shopping-cart"></i>
                 <span>(0)</span>
               </a>

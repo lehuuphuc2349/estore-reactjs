@@ -48,7 +48,7 @@ function Navbar() {
                   More Pages
                 </a>
                 <div className="dropdown-menu">
-                  <a href="/wish-list" className="dropdown-item">
+                  <a href="/wishlist" className="dropdown-item">
                     Wishlist
                   </a>
                   <a href="login-and-register" className="dropdown-item">

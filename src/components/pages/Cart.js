@@ -5,46 +5,26 @@ import product3 from "../images/product-3.jpg";
 import product4 from "../images/product-4.jpg";
 import product5 from "../images/product-5.jpg";
 import BreadCrumb from "../../function/BreadCrumb";
-import $ from "jquery";
 import "./Cart.css";
 function Cart() {
-  // const code = ["101", "102", "103"];
-  // const couponCode = () => {
-  //   const coupon = document.querySelectorAll("coupon");
-  //   const inputValue = coupon[0];
-  //   const zipCode = inputValue.value();
-  //   let value = document.getElementsByTagName("span").value;
-  //   code.map((item) => {
-  //     if (zipCode == item && value > 0) {
-  //       value = value - (value * 10) / 100;
-  //     } else {
-  //       if (value == 0) {
-  //         alert("Please Choose Product You Want");
-  //       } else {
-  //         alert("Your Zip Code Is Wrong");
-  //       }
-  //     }
-  //   });
-  // };
-  // useEffect(() => {
-  //   setTimeout(couponCode, 1000);
-  // });
   useEffect(() => {
     window.addEventListener("load", function () {
-      $(".qty btn").on("click", function () {
-        let $btn = $(this);
-        let value = $btn.parent().find("input").val();
-        let newValue;
-        if ($btn.hasClass("btn-plus")) {
-          newValue = value + 1;
-        } else {
-          if (value > 0) {
-            newValue = value - 1;
+      const btn = document.querySelectorAll(".qty button");
+      btn.forEach((item) => {
+        item.addEventListener("click", function () {
+          var value = document.querySelectorAll(".qty input").value;
+          if (item.classList.contains("btn-plus")) {
+            console.log(value);
+            var newValue = value + 1;
           } else {
-            newValue = 0;
+            if (value > 0) {
+              var newValue = value - 1;
+            } else {
+              newValue = 0;
+            }
           }
-        }
-        $btn.parent().find("input").val(newValue);
+          value = newValue;
+        });
       });
     });
   });

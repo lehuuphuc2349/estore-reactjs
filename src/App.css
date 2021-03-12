@@ -12,7 +12,10 @@ body {
 a {
   color: #ff6f61;
 }
-
+.btn:hover {
+  background-color: #ff6f61;
+  color: #fff !important;
+}
 a:hover,
 a:active,
 a:focus {
